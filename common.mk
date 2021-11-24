@@ -1,17 +1,17 @@
 #Common headers
 display_top := $(call my-dir)
 display_config_version := $(shell \
-    if [ -d "$(TOP)/vendor/qcom/opensource/interfaces/display/config/1.1" ];\
+    if [ -d "$(TOP)/vendor/qcom/codeaurora/interfaces/display/config/1.1" ];\
     then echo DISPLAY_CONFIG_1_1; fi)
 
 display_config_version := $(shell \
-    if [ -d "$(TOP)/vendor/qcom/opensource/interfaces/display/config/1.7" ];\
+    if [ -d "$(TOP)/vendor/qcom/codeaurora/interfaces/display/config/1.7" ];\
     then echo DISPLAY_CONFIG_1_7; fi)
 display_config_version := $(shell \
-     if [ -d "$(TOP)/vendor/qcom/opensource/interfaces/display/config/1.8" ];\
+     if [ -d "$(TOP)/vendor/qcom/codeaurora/interfaces/display/config/1.8" ];\
      then echo DISPLAY_CONFIG_1_8; fi)
 display_config_version := $(shell \
-    if [ -d "$(TOP)/vendor/qcom/opensource/interfaces/display/config/1.9" ];\
+    if [ -d "$(TOP)/vendor/qcom/codeaurora/interfaces/display/config/1.9" ];\
     then echo DISPLAY_CONFIG_1_9; fi)
 
 #Common C flags
